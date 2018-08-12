@@ -20,10 +20,6 @@ export class StartPage {
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad StartPage');
-  }
-
   createAccount() {
     this.navCtrl.push(TermsandconditionsPage);
   }
