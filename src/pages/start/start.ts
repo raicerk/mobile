@@ -29,7 +29,7 @@ export class StartPage {
   }
 
   gotoLogin() {
-    //this.navCtrl.setRoot(LoginPage);
+    this.navCtrl.setRoot(LoginPage);
   }
 
 }
