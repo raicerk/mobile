@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { LoginPage } from '../login/login';
+import { TermsandconditionsPage } from '../termsandconditions/termsandconditions';
+
 /**
  * Generated class for the StartPage page.
  *
@@ -19,6 +22,14 @@ export class StartPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad StartPage');
+  }
+
+  createAccount() {
+    this.navCtrl.push(TermsandconditionsPage);
+  }
+
+  gotoLogin() {
+    //this.navCtrl.setRoot(LoginPage);
   }
 
 }
