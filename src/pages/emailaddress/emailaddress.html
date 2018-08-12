@@ -14,5 +14,24 @@
 
 
 <ion-content padding>
+    <h1>And, your email?</h1>
+    <ion-list>
+        <form name="formlocal">
+            <ion-item>
+                <ion-label stacked>Email Address</ion-label>
+                <ion-input required name="email" type="email" [(ngModel)]="localdata.email" text-lowercase></ion-input>
+            </ion-item>
+        </form>
+
+    </ion-list>
+    <ion-grid>
+        <ion-row>
+            <ion-col width-20 offset-80>
+                <button float-right ion-button icon-only round (click)="checkEmail()">
+          <ion-icon name="arrow-forward"></ion-icon>
+        </button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
 
 </ion-content>
