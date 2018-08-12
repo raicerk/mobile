@@ -14,11 +14,17 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class ProfileviewPage {
 
+  profileView = {};
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
+    this.profileView['name'] = 'res.rows.item(i).firstname';
+    this.profileView['story'] = 'res.rows.item(i).mystory';
+    this.profileView['updates'] = 'res.rows.item(i).myupdates';
+    this.profileView['image'] = 'res.rows.item(i).picture';
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfileviewPage');
   }
 
 }
