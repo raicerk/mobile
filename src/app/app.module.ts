@@ -6,7 +6,6 @@ import { MyApp } from './app.component';
 import { StartPage } from '../pages/start/start';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -17,8 +16,7 @@ import { RestProvider } from '../providers/rest/rest';
     MyApp,
     StartPage,
     LoginPage,
-    HomePage,
-    ListPage
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -29,8 +27,7 @@ import { RestProvider } from '../providers/rest/rest';
     MyApp,
     StartPage,
     LoginPage,
-    HomePage,
-    ListPage
+    HomePage
   ],
   providers: [
     StatusBar,

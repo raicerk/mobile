@@ -5,7 +5,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { StartPage } from '../pages/start/start';
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { ProfileviewPage } from '../pages/profileview/profileview';
+import { RaresharePage } from '../pages/rareshare/rareshare';
 
 @Component({
   templateUrl: 'app.html'
@@ -15,15 +16,29 @@ export class MyApp {
 
   rootPage: any = StartPage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{ title: string, component: any }>;
+  rgiMenuItems: Array<{ title: string, component: any }>;
+  settingsMenuItems: Array<{ title: string, component: any }>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
-    // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
-      { title: 'List', component: ListPage }
+      { title: 'Home', component: HomePage},
+      { title: 'My Profile', component: ProfileviewPage },
+      { title: 'Rareshare', component: RaresharePage },
+      //{ title: 'Get a Diagnosis - RareREACH', component: RarereachPage }
+    ];
+
+    this.rgiMenuItems = [
+      //{ title: 'Contact Us.', component: ContactRGIPage }
+    ];
+
+    this.settingsMenuItems = [
+      //{ title: 'Terms and Conditions', component: TermsandconditionsPage },
+      //{ title: 'Privacy Policy', component: RarereachPage },
+      //{ title: 'My Settings', component: MySettingsPage },
+      //{ title: 'Support & Feedback', component: SupportAndFeedbackPage }
     ];
 
   }
