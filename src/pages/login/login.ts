@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { RestProvider } from '../../providers/rest/rest'
 
 /**
  * Generated class for the LoginPage page.
@@ -14,10 +15,17 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class LoginPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public rs: RestProvider) {
   }
 
   signIn() {
+
+    this.rs.post('/signin',{
+      email: 'email',
+      password: 'password'
+    }).then(response=>{
+      console.log(response);
+    })
 
     /* let body = this.jsonToURLEncoded({
       email: this.localdata['email'],
