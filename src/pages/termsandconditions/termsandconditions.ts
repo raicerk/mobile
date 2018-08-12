@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
 
+import { EmailaddressPage } from '../emailaddress/emailaddress';
+
 /**
  * Generated class for the TermsandconditionsPage page.
  *
@@ -21,7 +23,7 @@ export class TermsandconditionsPage {
   }
 
   agree() {
-    this.navCtrl.push(EmailAddressPage);
+    this.navCtrl.push(EmailaddressPage);
   }
 
   disagree() {
