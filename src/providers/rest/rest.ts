@@ -20,15 +20,15 @@ export class RestProvider {
   }
 
   post(url: string, data: any) {
-    return new Promise(function (resolve, reject) {
+    //return new Promise(function (resolve, reject) {
       this.gnf.post(url, {
         body: JSON.stringify(data)
       }).then(response => {
-        resolve(response);
+        //resolve(response);
       }).catch(error => {
-        reject(error);
+        //reject(error);
       });
-    })
+    //})
 
   }
 

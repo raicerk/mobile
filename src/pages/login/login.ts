@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { RestProvider } from '../../providers/rest/rest';
 
 import { SendresetpasswordemailPage } from '../sendresetpasswordemail/sendresetpasswordemail';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the LoginPage page.
@@ -29,9 +30,9 @@ export class LoginPage {
     this.rs.post('/signin', {
       email: this.Email,
       password: this.Password
-    }).then(response => {
-      console.log(response);
-    })
+    });
+
+    this.navCtrl.setRoot(HomePage)
 
     /* let body = this.jsonToURLEncoded({
       email: this.localdata['email'],
