@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { StartPage } from '../pages/start/start';
+import { TermsandconditionsPage } from '../pages/termsandconditions/termsandconditions';
+import { EmailaddressPage } from '../pages/emailaddress/emailaddress';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ProfileviewPage } from '../pages/profileview/profileview';
@@ -17,6 +19,8 @@ import { RestProvider } from '../providers/rest/rest';
   declarations: [
     MyApp,
     StartPage,
+    TermsandconditionsPage,
+    EmailaddressPage,
     LoginPage,
     HomePage,
     ProfileviewPage,
@@ -30,6 +34,8 @@ import { RestProvider } from '../providers/rest/rest';
   entryComponents: [
     MyApp,
     StartPage,
+    TermsandconditionsPage,
+    EmailaddressPage,
     LoginPage,
     HomePage,
     ProfileviewPage,
