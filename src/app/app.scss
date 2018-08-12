@@ -14,3 +14,548 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+
+a {
+    color: #AD208E;
+    text-decoration: none;
+    cursor: pointer;
+    &.more-options,
+    &.header-anchor {
+        text-decoration: none;
+    }
+}
+
+.ios, .md {
+    page-home {
+        p {
+            font-size: 19px;
+            color: #000;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .swiper-slide {
+            display: block;
+        }
+        ion-label, .select-text {
+            margin-left: 10px;
+        }
+        ion-input, ion-select, ion-textarea {
+            background-color: #f2f2f2;
+            padding: 5px 10px;
+        }
+        .invalid {
+            border: 1px solid #ea6153;
+        }
+        img{
+          max-width:50%;
+          display:block;
+          margin: 0 auto;
+          width: 181pt;
+          height: 150pt;
+
+        }
+        h4{
+        color:#AD208E;
+        text-align: center;
+        margin:5px 0;
+        font-size: 24px;
+        }
+    }
+}
+
+ion-header {
+    ion-grid {
+        padding: 0;
+    }
+    ion-row {
+        padding: 0;
+    }
+    ion-col {
+        text-align: center !important;
+        padding: 0;
+    }
+    .btnEmergency {
+        height: 3em;
+        width: 3em;
+        border-radius: 50%;
+        background: #f53d3d;
+        color: white;
+    }
+}
+
+  .iconeffect:hover {color: red;}
+page-medhome{
+
+  p {
+      font-size: 14pt;
+      color: #000;
+      }
+
+  .iconeffect{}
+}
+
+.borderbox{border: 0.5pt solid gray;}
+
+ion-content {
+    // background: linear-gradient(141deg, #000000 0%, #1fc8db 51%, #2cb5e8 75%);
+    //background-image: url("../assets/images/background5.jpg");
+    background-color:#fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    img {
+        margin-bottom: 2em;
+        max-width:50%;
+        display:block;
+        margin: 0 auto;
+        width: 181pt;
+        height: 150pt;
+    }
+    h4 {
+        color: #FFF;
+    }
+    [ion-button] {
+        // box-shadow: none;
+    }
+    .facebook-login {
+        background: #008FD1;
+        height:45px;
+        width:80%;
+        display:block;
+        margin:6px auto;
+        border-radius:5;
+        color: #FFF;
+        &.activated {
+            background-color: #FFF !important;
+        }
+    }
+    .create-account {
+        background: #008FD1;
+        height:45px;
+        // width:70%;
+        // display:block;
+        margin:6px auto;
+        border-radius:5;
+        color: #FFF;
+
+        &.activated {
+            background: none !important;
+        }
+    }
+    .login{
+        background:none;
+        height:45px;
+        margin:6px auto;
+        border-radius:5;
+        // width:60%;
+        display:block;
+        // margin: 0 auto;
+        // border-radius:5;
+        // color: #55526D;
+        // border:1px solid #DEE4E7;
+    }
+
+    //LOGIN PAGE
+
+    .loginsigninbutton {
+                        width: 114px;
+                        height: 45px;
+                      }
+
+    .loginforgotpasswordbutton{
+                                width: 290px;
+                                height: 45px;
+                              }
+
+    .buttonImage {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        background: none;
+    }
+    p {
+        color: #55526D;
+
+        font-size: 12px;
+    }
+    .icon {
+        font-size: 22px;
+    }
+    .item {
+        background-color: white;
+        color:#55526D;
+    }
+    .btnTop {
+        height: 3em;
+        width: 3em;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 1);
+        color: white;
+    }
+    .profileBack{
+        height: 200px;
+        background: #DB64D9; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, #DB64D9 , #8656A7); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, #DB64D9, #8656A7); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, #DB64D9, #8656A7); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #DB64D9 , #8656A7); /* Standard syntax (must be last) */
+    }
+    .btnTopWhite {
+        height: 2em;
+        width: 2em;
+        border-radius: 50%;
+        //color:white;
+        display:flex;
+        justify-content:initial;
+        //position:absolute;
+        //margin:20px 0px 0px 20px;
+        z-index:2;
+    }
+    .btnTopWhite_edit{
+        position: absolute;
+        top:20px;
+        right:20px;
+        padding:20px;
+        color:white;
+    }
+    .profileName{
+        -webkit-justify-content: center;
+        display: flex;
+        justify-content: center;
+        margin: 30px 0px 0px -35px;
+        color:white;
+    }
+    .btnSave {
+        background: rgba(62, 142, 31, 1);
+        height: 200px;
+        background: #DB64D9; /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(left, #DB64D9 , #8656A7); /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(right, #DB64D9, #8656A7); /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(right, #DB64D9, #8656A7); /* For Firefox 3.6 to 15 */
+        background: linear-gradient(to right, #DB64D9 , #8656A7); /* Standard syntax (must be last) */
+        color: white;
+        height:45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius:5px;
+        margin-left:0px;
+    }
+    .btnDelete {
+        background:white;
+        border-color:#AD208E;
+        margin-right:10px;
+        color: #AD208E;
+        height:45px;
+        border-radius:5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .formFill {
+        color: black;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 0;
+        display: flex;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .labelForm {
+        max-width: 600px;
+        background: white;
+        padding: 0;
+        font-size: 16px;
+        margin: 0 auto;
+        height: 35px;
+        text-align: left;
+        color: #55526D;
+    }
+    .labelTransBg {
+        max-width: 600px;
+        background: transparent !important;
+        padding: 0;
+        font-size: 16px;
+        margin: 0 auto;
+        height: 35px;
+        text-align: left;
+        color: white;
+    }
+    .ios, .md {
+        p {
+            font-size: 0.8em;
+            color: #d2d2d2;
+        }
+        .swiper-slide {
+            display: block;
+        }
+        ion-label, .select-text {
+            margin-left: 10px;
+        }
+        ion-input, ion-select, ion-textarea {
+            background-color: #f2f2f2;
+            padding: 5px 10px;
+        }
+        .invalid {
+            border: 1px solid #ea6153 !important;
+        }
+}
+    .labelFormList {
+        max-width: 600px;
+        padding: 0;
+        font-size: 16px;
+        margin: 0 auto;
+        height: 35px;
+        text-align: center;
+        color: white;
+    }
+    .viewFormFill {
+        color: white;
+        background: transparent !important;
+        padding: 0;
+        display: flex;
+        max-width: 600px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    textarea {
+        max-width: 100%;
+        width: 100%;
+        height: 40px;
+    }
+}
+.toolbar-background {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.subtext{
+    font-size: 12px;
+}
+
+.toolbartitle {
+    color: #55526D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.toolbar-title-md{
+    text-align:center;
+}
+.toast-sms-failed {
+    div {
+        background: #21c6db !important;
+        background-color: #21c6db !important;
+        color: red !important;
+    }
+}
+.toast-sms-success {
+    div {
+        background: #21c6db !important;
+        background-color: #21c6db !important;
+        color: white !important;
+    }
+}
+textarea {
+    max-width: 100%;
+    width: 100%;
+    height: 30vh;
+}
+.slide-image {
+    max-height: 50% !important;
+    max-width: 60% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: auto;
+    padding-top: 10px;
+  }
+.slide-title {
+    color: rgb(82, 94, 97);
+    text-shadow: 0.1px 0.1px #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slide-description {
+    color: rgb(82, 94, 97) !important;
+    font-size: 16px;
+    text-align: left !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    //width: 276px;
+    //height: 84px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.card-md {
+    background: transparent !important;
+    color: white;
+    text-shadow: 1px 1px #000000 !important;
+}
+
+.card-ios {
+    background: transparent !important;
+    color: white;
+    text-shadow: 1px 1px #000000 !important;
+}
+.patientPhoto {
+    -webkit-justify-content: center !important;
+    display: flex;
+    justify-content: center !important;
+    padding-bottom: 40px;
+}
+ion-slides { height:initial; }
+.formSelect {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    flex: 2;
+}
+.formSelectRow {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex !important;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    flex: 3;
+}
+.addBtn {
+    width: 0.1em;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    flex: 1;
+}
+.formElements {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    display: flex;
+    max-width: 600px;
+    height: 35px;
+    text-align: center;
+    margin: 0 auto;
+}
+textarea {
+    max-width: 100%;
+    width: 100%;
+    height: 30vh;
+}
+.patientPhoto {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.formSelect {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    flex: 2;
+}
+.formSelectRow {
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex !important;
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    flex: 3;
+}
+.addBtn {
+    width: 0.1em;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    flex: 1;
+}
+.signOutMenuItem {
+    background: plum !important;
+    color: white !important;
+}
+textarea {
+    max-width: 100%;
+    width: 100%;
+    height: 40vh;
+}
+//medhome css
+ion-content .btnTop {
+  height: 3em;
+  width: 3em;
+  border-radius: 50%;
+  background: none;
+  color:#55526D ;
+}
+.card-md {
+  background: transparent !important;
+  color: white;
+  text-shadow: none !important;
+}
+.button-md{
+  background-color:none;
+  -webkit-box-shadow: none;
+  box-shadow:none;
+}
+//meddetails css
+.alarmArrow{
+    float:right;
+    margin-top:-30px;
+}
+.alarmSwich{
+    margin-top:-40px;
+    float:right;
+}
+
+.remindTime{
+    font-size: 15px;
+    margin-left : 100px;
+    color: grey;
+}
+.moodfeedback{
+    font-size: 20px;
+    text-decoration-color: black;
+    justify-content: center;
+}
+
+#middle{
+    margin-left: 100px;
+}
+.clearButton{
+    background-color: white
+}
+.timeInput
+{
+    size: 10px;
+    width: 10px;
+}
+ion-footer {
+    ion-grid {
+        padding: 0;
+    }
+    ion-row {
+        padding: 0;
+    }
+    ion-col {
+        text-align: center;
+        padding: 0;
+    }
+}
+
+.tabs-md[tabsPlacement="bottom"] > .tabbar::before {
+    background-image: none !important;
+}
+
+.tabs-md .tabbar {
+    background: none !important;
+}

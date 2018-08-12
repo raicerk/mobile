@@ -1,0 +1,33 @@
+<ion-content padding>
+  <ion-grid>
+      <ion-row>
+          <ion-col width-20>
+              <div class="box">
+                  <img width="150px" src="assets/imgs/rg-logo.png">
+              </div>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              <h4>Welcome</h4>
+                <h4>to</h4>
+                <h4>Rare Genomics Institute</h4>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              <button class="create-account disable-hover" ion-button full color="light" block (click)="createAccount()">Create New Account</button>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              <p>Already have an account?</p>
+          </ion-col>
+      </ion-row>
+      <ion-row>
+          <ion-col>
+              <button class="login disable-hover" ion-button outline block (click)="gotoLogin()">Login </button>
+          </ion-col>
+      </ion-row>
+  </ion-grid>
+</ion-content>
