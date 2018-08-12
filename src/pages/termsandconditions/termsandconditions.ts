@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { NavController, NavParams, AlertController } from 'ionic-angular';
 
 /**
  * Generated class for the TermsandconditionsPage page.
@@ -14,11 +14,23 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class TermsandconditionsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,public alertCtrl: AlertController) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad TermsandconditionsPage');
+  }
+
+  agree() {
+    this.navCtrl.push(EmailAddressPage);
+  }
+
+  disagree() {
+    let alert = this.alertCtrl.create({
+      title: 'Information',
+      subTitle: "Thank you for visiting our Rare Genomics App.HIPAA data protection compliance requires for the user to accept our terms and conditions in order to use it",
+      buttons: ['OK']
+    });
+    alert.present();
   }
 
 }
