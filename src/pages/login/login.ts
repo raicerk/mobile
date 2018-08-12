@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { RestProvider } from '../../providers/rest/rest'
+import { RestProvider } from '../../providers/rest/rest';
+
+import { SendresetpasswordemailPage } from '../sendresetpasswordemail/sendresetpasswordemail';
 
 /**
  * Generated class for the LoginPage page.
@@ -15,15 +17,19 @@ import { RestProvider } from '../../providers/rest/rest'
 })
 export class LoginPage {
 
+  Email: string;
+  Password: string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public rs: RestProvider) {
+
   }
 
   signIn() {
 
-    this.rs.post('/signin',{
-      email: 'email',
-      password: 'password'
-    }).then(response=>{
+    this.rs.post('/signin', {
+      email: this.Email,
+      password: this.Password
+    }).then(response => {
       console.log(response);
     })
 
@@ -63,7 +69,7 @@ export class LoginPage {
 
 
   forgotPassword() {
-    //this.navCtrl.push(SendResetPasswordEmailPage);
+    this.navCtrl.push(SendresetpasswordemailPage);
   }
 
 }

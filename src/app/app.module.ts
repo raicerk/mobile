@@ -4,6 +4,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
 import { StartPage } from '../pages/start/start';
+import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 
@@ -15,6 +16,7 @@ import { RestProvider } from '../providers/rest/rest';
   declarations: [
     MyApp,
     StartPage,
+    LoginPage,
     HomePage,
     ListPage
   ],
@@ -26,14 +28,15 @@ import { RestProvider } from '../providers/rest/rest';
   entryComponents: [
     MyApp,
     StartPage,
+    LoginPage,
     HomePage,
     ListPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     RestProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }
