@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import GoNFetch from 'go-n-fetch';
 
@@ -33,13 +32,13 @@ export class RestProvider {
   }
 
   get(url: string) {
-    return new Promise(function (resolve, reject) {
+    //return new Promise(function (resolve, reject) {
       this.gnf.get(url).then(response => {
-        resolve(response);
+        //resolve(response);
       }).catch(error => {
-        reject(error);
+        //reject(error);
       })
-    })
+    //})
   }
 
 }
