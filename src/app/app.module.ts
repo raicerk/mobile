@@ -7,6 +7,7 @@ import { StartPage } from '../pages/start/start';
 import { LoginPage } from '../pages/login/login';
 import { HomePage } from '../pages/home/home';
 import { ProfileviewPage } from '../pages/profileview/profileview';
+import { RaresharePage } from '../pages/rareshare/rareshare';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -18,7 +19,8 @@ import { RestProvider } from '../providers/rest/rest';
     StartPage,
     LoginPage,
     HomePage,
-    ProfileviewPage
+    ProfileviewPage,
+    RaresharePage
   ],
   imports: [
     BrowserModule,
@@ -30,7 +32,8 @@ import { RestProvider } from '../providers/rest/rest';
     StartPage,
     LoginPage,
     HomePage,
-    ProfileviewPage
+    ProfileviewPage,
+    RaresharePage
   ],
   providers: [
     StatusBar,
