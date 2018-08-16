@@ -7,6 +7,7 @@ import { StartPage } from '../pages/start/start';
 import { HomePage } from '../pages/home/home';
 import { ProfileviewPage } from '../pages/profileview/profileview';
 import { RaresharePage } from '../pages/rareshare/rareshare';
+import { LoginPage } from '../pages/login/login';
 
 @Component({
   templateUrl: 'app.html'
@@ -55,5 +56,9 @@ export class MyApp {
     // Reset the content nav to have just this page
     // we wouldn't want the back button to show in this scenario
     this.nav.push(page.component);
+  }
+
+  signOut(){
+    this.nav.setRoot(StartPage)
   }
 }
